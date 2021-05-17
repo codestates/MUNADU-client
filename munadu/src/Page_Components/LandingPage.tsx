@@ -35,7 +35,7 @@ export default function LandingPage() {
         <Landing.Title>
           무나두
           <br />
-          무술? 너도 할 수 있어! test
+          무술? 너도 할 수 있어!
         </Landing.Title>
         <Button
           onClick={() => {
