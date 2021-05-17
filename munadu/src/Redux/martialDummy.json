@@ -1,3 +1,34 @@
 {
-  "abc": "abc"
+  "data": [
+    {
+      "id": 0,
+      "name": "태권도",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 0,
+      "sports": 0,
+      "manner": 0,
+      "attack": 0,
+      "nation": "대한민국",
+      "caption": "블라블라 대한민국 전동 무술",
+      "video": "url",
+      "kcal": 411,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Milad_Kharchegani_at_the_2016_Summer_Olympics.jpg"
+    },
+    {
+      "id": 1,
+      "name": "검도",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 0,
+      "sports": 0,
+      "manner": 0,
+      "attack": 0,
+      "nation": "대한민국",
+      "caption": "대한민국 전동 검도",
+      "video": "url",
+      "kcal": 413,
+      "img": "https://lh3.googleusercontent.com/proxy/MrDA3pUaqD1NDQM78Sl8_98RKMH6JT9Qi-UiRUX5RYkzilcR4IJkjCQvkaZGmajnd7m6TEyJpyJ4dHjm_YXGFswpW4fhaNylunKHvYgwJYqNYBzOMqvFq8d60KLOsp8bgcnvr1KObX2tAin5g0un"
+    }
+  ]
 }
