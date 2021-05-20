@@ -8,6 +8,7 @@ interface Iprops {
 }
 
 function ReadCard({ card, callback }: Iprops) {
+  //
   return (
     <div
       onClick={(e) => {

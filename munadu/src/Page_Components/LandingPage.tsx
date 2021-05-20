@@ -17,7 +17,7 @@ export interface Icard {
 function LandingPage() {
   const [select, setSelect] = useState(0);
   const history = useHistory();
-
+  //
   const test = async () => {
     const data: any = await axios.get("http://localhost:5000/user/info/1", {
       headers: {

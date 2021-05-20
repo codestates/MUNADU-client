@@ -7,3 +7,4 @@ export const Card = styled.div<{ background: string }>`
   height: 100px;
   width: 70px;
 `;
+//

@@ -4,7 +4,7 @@ const Board: any = styled.div<{ background: string }>`
   position: relative;
   z-index: 4;
 `;
-
+//
 const CardBoard: any = styled.div`
   display: flex;
   z-index: 1;

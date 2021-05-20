@@ -5,7 +5,7 @@ const martialReducer = (state: any = dummy, action: any) => {
   switch (action.type) {
     // case SET_MYPAGE:
     //   return action.payload.obj;
-
+    //
     default:
       return state;
   }

@@ -25,6 +25,7 @@ function Canvas(props: any) {
     minSpeed: number = 6;
 
   const draw = (ctx: any): void => {
+    //
     ctx.clearRect(0, 0, w, h);
     for (let i = 1; i < dots.length; i++) {
       const grd: any = ctx.createLinearGradient(
