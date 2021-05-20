@@ -26,7 +26,6 @@ function LandingPage() {
       },
       withCredentials: true,
     });
-    console.log(`나는 데이터야`, data);
   };
 
   const setCard = (key: number): void => {
