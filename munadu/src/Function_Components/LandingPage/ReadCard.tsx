@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Icard } from "../../Page_Components/LandingPage";
 import { Card } from "../../StyledComponents/Card";
 
@@ -6,10 +7,11 @@ interface Iprops {
   callback: Function;
 }
 
-export default function ReadCard({ card, callback }: Iprops) {
+function ReadCard({ card, callback }: Iprops) {
   return (
     <div
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         callback(card.id);
       }}
     >
@@ -17,3 +19,5 @@ export default function ReadCard({ card, callback }: Iprops) {
     </div>
   );
 }
+
+export default memo(ReadCard);

@@ -13,7 +13,7 @@
       "caption": "블라블라 대한민국 전동 무술",
       "video": "url",
       "kcal": 411,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Milad_Kharchegani_at_the_2016_Summer_Olympics.jpg"
+      "img": "http://localhost:5000/uploads/1621472992468.jpeg"
     },
     {
       "id": 1,
@@ -28,7 +28,7 @@
       "caption": "대한민국 전동 검도",
       "video": "url",
       "kcal": 413,
-      "img": "https://lh3.googleusercontent.com/proxy/MrDA3pUaqD1NDQM78Sl8_98RKMH6JT9Qi-UiRUX5RYkzilcR4IJkjCQvkaZGmajnd7m6TEyJpyJ4dHjm_YXGFswpW4fhaNylunKHvYgwJYqNYBzOMqvFq8d60KLOsp8bgcnvr1KObX2tAin5g0un"
+      "img": "http://localhost:5000/uploads/1621424615218.png"
     }
   ]
 }
