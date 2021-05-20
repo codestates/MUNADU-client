@@ -1,7 +1,7 @@
 import dummy from "../martialDummy.json";
-// import {  } from "../Actions/actions";
+import { SET_MARTIAL } from "../Actions/martial";
 
-const martialReducer = (state = dummy, action) => {
+const martialReducer = (state: any = dummy, action: any) => {
   switch (action.type) {
     // case SET_MYPAGE:
     //   return action.payload.obj;

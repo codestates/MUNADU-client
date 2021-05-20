@@ -15,9 +15,15 @@ import DetailPage from "./Page_Components/DetailPage";
 import OtherUserPage from "./Page_Components/OtherUserPage";
 import { useHistory } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 function App() {
   const authState = useSelector((state) => state.authReducer);
+  // const dispatch = useDispatch()
+  // useEffect(()=>{
+  //   dispatch
+  // })
+
   return (
     <Router>
       <Switch>
