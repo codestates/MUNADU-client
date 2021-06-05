@@ -1,0 +1,95 @@
+{
+  "martialData": [
+    {
+      "name": "ITF 태권도",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 0,
+      "sports": 1,
+      "manner": 0,
+      "attack": 0,
+      "nation": "대한민국",
+      "caption": "한국의 실전 무예 태권도",
+      "video": "https://www.youtube.com/watch?v=doLgDKo00MY",
+      "kcal": 514,
+      "img": "/martialImg/itf_taekwondo.svg",
+      "wiki": "https://namu.wiki/w/%EA%B5%AD%EC%A0%9C%ED%83%9C%EA%B6%8C%EB%8F%84%EC%97%B0%EB%A7%B9?from=ITF%20%ED%83%9C%EA%B6%8C%EB%8F%84"
+    },
+    {
+      "name": "절권도",
+      "weapon": 0,
+      "uniform": 1,
+      "origin": 0,
+      "sports": 1,
+      "manner": 0,
+      "attack": 0,
+      "nation": "중국",
+      "caption": "이소룡이 창시한 무술 철학으로 실용적인 측면을 강조한 무술",
+      "video": "https://www.youtube.com/watch?v=H7kgILKgs6o",
+      "kcal": 514,
+      "img": "/martialImg/jeetkunedo.svg",
+      "wiki": "https://namu.wiki/w/%EC%A0%88%EA%B6%8C%EB%8F%84"
+    },
+
+    {
+      "name": "주짓수",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 1,
+      "sports": 0,
+      "manner": 1,
+      "attack": 1,
+      "nation": "브라질",
+      "caption": "일본에서 기원하고 브라질에서 발전된 유술",
+      "video": "https://www.youtube.com/watch?v=klG8wSgMLgw",
+      "kcal": 900,
+      "img": "/martialImg/jiujitsu.svg",
+      "wiki": "https://namu.wiki/w/%EC%A3%BC%EC%A7%93%EC%88%98"
+    },
+    {
+      "name": "크라브마가(민간인교육용)",
+      "weapon": 0,
+      "uniform": 1,
+      "origin": 1,
+      "sports": 1,
+      "manner": 1,
+      "attack": 2,
+      "nation": "이스라엘",
+      "caption": "이스라엘의 현대식 호신술 겸 격투기",
+      "video": "https://www.youtube.com/watch?v=FQrk8kj7PJc",
+      "kcal": 514,
+      "img": "/martialImg/kravmaga.svg",
+      "wiki": "https://namu.wiki/w/%ED%81%AC%EB%9D%BC%EB%B8%8C%20%EB%A7%88%EA%B0%80"
+    },
+    {
+      "name": "대도숙 공도(쿠도)",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 0,
+      "sports": 0,
+      "manner": 0,
+      "attack": 2,
+      "nation": "일본",
+      "caption": "가라테 계열의 무도 중에서 가장 파격적인 형태로 발전한 유파",
+      "video": "https://www.youtube.com/watch?v=kkRe8xzWqcY",
+      "kcal": 514,
+      "img": "/martialImg/kudo.svg",
+      "wiki": "https://namu.wiki/w/%EB%8C%80%EB%8F%84%EC%88%99%20%EA%B3%B5%EB%8F%84"
+    },
+    {
+      "name": "아이키도",
+      "weapon": 0,
+      "uniform": 0,
+      "origin": 0,
+      "sports": 0,
+      "manner": 0,
+      "attack": 1,
+      "nation": "일본",
+      "caption": "일본에서 창시된 유술계통의 현대 무도",
+      "video": "https://www.youtube.com/watch?v=palQikL1G3g",
+      "kcal": 514,
+      "img": "/martialImg/aikido.svg",
+      "wiki": "https://namu.wiki/w/%EC%95%84%EC%9D%B4%ED%82%A4%EB%8F%84"
+    }
+  ]
+}

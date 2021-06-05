@@ -1,0 +1,17 @@
+{
+  "isHand": false,
+  "isWeapon": false,
+  "isHandAndWeapon": false,
+  "isDobok": false,
+  "isFreebok": false,
+  "isUniform": false,
+  "isAttack": false,
+  "isGround": false,
+  "isMMA": false,
+  "isEastern": false,
+  "isWestern": false,
+  "isSports": false,
+  "isNoSports": false,
+  "isCourtesy": false,
+  "isFreedom": false
+}
