@@ -2,7 +2,7 @@ import ReadReview from "../DetailPage/ReadReview";
 import ReadComment from "../DetailPage/ReadComment";
 import { Text, TextBox, TextWrapper } from "../../Page_Components/DetailPage";
 import { useState } from "react";
-export default function UserLecord({ userId }: { userId: number }) {
+export default function UserRecord({ userId }: { userId: number }) {
   const [tabNum, setTabNum] = useState<number>(0);
 
   const setContent = () => {

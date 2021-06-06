@@ -26,7 +26,7 @@ export default function GoogleLogin() {
         }}
       >
         <Button color="white" margin="10px 0px" width="100%" height="38px">
-          <GoogleIcon src="https://cdn.icon-icons.com/icons2/2699/PNG/512/google_logo_icon_169090.png"></GoogleIcon>
+          <GoogleIcon src="/google.png"></GoogleIcon>
           구글 로그인
         </Button>
       </GoogleLoginButton>

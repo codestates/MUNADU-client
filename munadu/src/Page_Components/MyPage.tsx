@@ -9,7 +9,7 @@ import Button from "../StyledComponents/button";
 import SetProfile from "../Function_Components/MyPage/SetProfile";
 import SetPassword from "../Function_Components/MyPage/SetPassword";
 import HeaderBar from "../Function_Components/Common/HeaderBar";
-import UserLecord from "../Function_Components/MyPage/UserLecord";
+import UserRecord from "../Function_Components/MyPage/UserRecord";
 
 export default function MyPage() {
   const userData: Istate = useSelector((state: RootState) => {
@@ -58,7 +58,7 @@ export default function MyPage() {
                 </p>
               </div>
             </MyPageStyle.UserProfile>
-            <UserLecord userId={userId}></UserLecord>
+            <UserRecord userId={userId}></UserRecord>
           </MyPageStyle.SetBoard>
         </MyPageStyle.ContentBoard>
       ) : (
