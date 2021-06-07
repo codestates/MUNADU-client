@@ -227,7 +227,8 @@ https://munadu.site/landingpage
     3. Figma 활용 UI 디자인 (데스크탑 버전 & 모바일 버전)
     
 ***
-## 🖋 팀 
+
+## 🖋 팀 규칙 
 ### 커뮤니케이션
 * 모든 커뮤니케이션은 상호간에 대한 배려를 기본 원칙으로 합니다.
 * 어떤 의견에도 일방 통행은 없습니다. 의견 표현은 자유롭게 하되, 언제든지 근거를 가지고 반대 의견을 표현할 수 있습니다.
@@ -514,3 +515,73 @@ ex) Main_Btn
 
 
 <img width="381" alt="스크린샷 2021-06-04 오후 2 12 28" src="https://user-images.githubusercontent.com/54937901/120749661-ef19f780-c53f-11eb-9eb5-3722efa1fd57.png">
+
+## API 문서
+* 링크 :  https://app.gitbook.com/@munadu-1/s/munadu/
+
+### API 설계
+* USER, MARTIAL, REVIEW, COMMENT, REPLY, CHANNEL 의 여섯가지 분기로 나누어 전송
+* GET, POST, PUT, DELETE 의 CRUD를 모두 구현
+
+### API 상세
+
+* USER
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/user/info/:userid|Get User Info|
+|GET|/user/signout|Log Out|
+|POST|/user/signin|Log In|
+|POST|/user/sociallogin|Social Log In|
+|POST|/user/signup|Sign Up|
+|DELETE|/user/userdelete|Delete User Info|
+|PUT|/user/edit|Update User Info|
+|PUT|/user/editimg|Update User Profile Image|
+|PUT|/user/editpassword|Update User Password|
+
+* MARTIAL
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/martial/info|Get Martial Info|
+|GET|/martial/bookmark/:userid|Get User's Bookmark
+|GET|/martial/rank|Get Martial's Rank
+|POST|/martial/bookmark-create|Create User's Bookmark
+
+
+* REVIEW
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/review/martial-list/:martialid|Get Martial's Review List
+|GET|/review/user-list/:userid|Get User's Review List
+|POST|/review/create|Create New Review
+|DELETE|/review/delete|Delete Review
+|PUT|/review/update|Update Review
+
+* COMMENT
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/comment/martial-list/:martialid|Get Martial's Comment List
+|GET|/comment/user-list/:userid|Get User's Comment List
+|POST|/comment/create|Create New Comment
+|DELETE|/comment/delete|Delete Comment
+|PUT|/comment/update|Update Comment
+
+* REPLY
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/reply/review-list/:reviewid|Get Review's Reply List
+|GET|/reply/all-reply-list|Get All Reply List
+|GET|/reply/user-list/:userid|Get User's Reply List
+|POST|/reply/create|Create New Reply
+|DELETE|/reply/delete|Delete Reply
+|PUT|/reply/update|Update Reply
+
+* CHANNEL
+
+|METHOD|ENDPOINT|USAGE|
+|------|--------|----------|
+|GET|/channel|Get Channel List
