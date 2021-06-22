@@ -7,182 +7,28 @@ import { RootState } from "../../Redux/Store/store";
 import youtube from "./img/youtube.svg";
 import wiki from "./img/wiki.svg";
 import { useHistory } from "react-router";
-
-const MartialSummary = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 54%;
-  background: #ffffff;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-`;
-const SummaryWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 2%;
-  height: 40%;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    flex-direction: column;
-  }
-`;
-const BasicSummary = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-`;
-const ChartSummary = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    /* margin: 5px; */
-    width: 100%;
-  }
-`;
-
-const ChartWrapper = styled.div`
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    width: 80%;
-    height: auto;
-    align-self: center;
-  }
-`;
-const SummaryKey = styled.div`
-  justify-content: space-around;
-  flex-direction: column;
-  min-width: 8em;
-  display: flex;
-`;
-const SummaryValue = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding-right: 150px;
-`;
-const KeyList = styled.div`
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 29px;
-  color: #1c1c1c;
-  margin: 10%;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    margin: 10px;
-    line-height: 0;
-  }
-`;
-const ValueList = styled.div`
-  width: 200px;
-  font-family: Noto Sans KR Medium;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #1c1c1c;
-  margin: 10%;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    margin: 10px;
-  }
-`;
-
-const IconImg = styled.img`
-  padding-left: 4px;
-`;
-
-const ChartTitle = styled.div`
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 29px;
-  color: #1c1c1c;
-  margin-top: 3%;
-  margin-left: 3%;
-`;
-
-const UrlValue = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
-
-const RecommendWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 3%;
-  align-self: center;
-  width: 88%;
-  height: 25%;
-  justify-content: space-between;
-`;
-
-const Recommend = styled.div`
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 29px;
-  color: #1c1c1c;
-`;
-const RecommendBoxWrapper = styled.div`
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    flex-direction: column;
-  }
-`;
-
-const RecommendBox = styled.div`
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-  background: #ffffff;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding-right: 1%;
-  margin-bottom: 3%;
-  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    width: 100%;
-  }
-`;
-
-const MartialImg = styled.img`
-  margin: 5%;
-`;
-
-const TitleAndCaption = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-const RecommendTitle = styled.div`
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.015em;
-  color: #1c1c1c;
-`;
-const RecommendCaption = styled.div`
-  font-family: Noto Sans KR Light;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.015em;
-  color: #1c1c1c;
-`;
+import {
+  MartialSummary,
+  SummaryWrapper,
+  BasicSummary,
+  ChartSummary,
+  ChartWrapper,
+  SummaryKey,
+  SummaryValue,
+  KeyList,
+  ValueList,
+  IconImg,
+  ChartTitle,
+  UrlValue,
+  RecommendWrapper,
+  Recommend,
+  RecommendBoxWrapper,
+  RecommendBox,
+  MartialImg,
+  TitleAndCaption,
+  RecommendTitle,
+  RecommendCaption,
+} from "../../StyledComponents/summary";
 
 interface IProps {
   martialId: number;
@@ -280,13 +126,10 @@ const Summary = ({ martialId }: IProps) => {
           <BasicSummary>
             <SummaryKey>
               <KeyList>종주국</KeyList>
-              <KeyList>공격 방식</KeyList>
-              <KeyList>관련 영상</KeyList>
-              <KeyList>상세 정보</KeyList>
-              <KeyList>칼로리 소모</KeyList>
-            </SummaryKey>
-            <SummaryValue>
               <ValueList>{theMartial.nation}</ValueList>
+            </SummaryKey>
+            <SummaryKey>
+              <KeyList>공격 방식</KeyList>
               {theMartial.weapon === 0 ? (
                 <ValueList>맨손</ValueList>
               ) : theMartial.weapon === 1 ? (
@@ -294,20 +137,29 @@ const Summary = ({ martialId }: IProps) => {
               ) : (
                 <ValueList>맨손 & 무기</ValueList>
               )}
+            </SummaryKey>
+            <SummaryKey>
+              <KeyList>관련 영상</KeyList>
               <ValueList>
                 <UrlValue onClick={() => moveToUrl(theMartial.video)}>
                   영상 보러 가기 <IconImg src={youtube} />
                 </UrlValue>
               </ValueList>
+            </SummaryKey>
+            <SummaryKey>
+              <KeyList>상세 정보</KeyList>
               <ValueList>
                 <UrlValue onClick={() => moveToUrl(theMartial.wiki)}>
                   위키백과 <IconImg src={wiki} />
                 </UrlValue>
               </ValueList>
+            </SummaryKey>
+            <SummaryKey>
+              <KeyList>칼로리 소모</KeyList>
               <ValueList>
                 <Bar percent={theMartial.kcal / 10}></Bar>
               </ValueList>
-            </SummaryValue>
+            </SummaryKey>
           </BasicSummary>
           <ChartSummary>
             <ChartTitle>사형의 판단</ChartTitle>

@@ -6,9 +6,8 @@ const Container = styled.div`
   height: 7px;
   width: 100%;
   position: relative;
-  margin-bottom: 5%;
   @media only screen and (max-width: ${(props) => props.theme.width.media}) {
-    width: 70%;
+    width: 60%;
   }
 `;
 
@@ -38,9 +37,11 @@ const Kcal = styled.div`
   margin-left: 105%;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
   color: #1c1c1c;
+  @media only screen and (max-width: ${(props) => props.theme.width.media}) {
+    font-size: 1rem;
+  }
 `;
 
 const Bar = ({ percent }: IProps) => {
